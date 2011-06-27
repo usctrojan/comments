@@ -17,9 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "comments"
   gem.homepage = "http://github.com/usctrojan/comments"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{one-line summary of your gem}
+  gem.description = %Q{longer description of your gem}
   gem.email = "abtrinh@gmail.com"
+  gem.files = Dir["{lib}/**/*", "{app}/**/*", "{config}/**/*"]
   gem.authors = ["Your Name"]
   # dependencies defined in Gemfile
 end

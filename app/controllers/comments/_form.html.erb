@@ -1,0 +1,22 @@
+<%= render "comments/list", :commentable => commentable %>
+
+
+<!--NOTE THE MAIN ONE IS ENTRIES/COMMENT_FORM form!!! -->
+
+<div id="reply_box" class="standard_form">
+  <h3>Comment</h3>
+  <% if logged_in? %>
+    <%= semantic_form_for [commentable.plugin, commentable, Comment.new] do |f| %>
+      <%= render "comments/fields", :f => f %>
+
+
+    <% end %>
+  <% else %>
+    <%= link_to "Please login to comment", login_path %>
+
+
+
+  <% end %>
+
+</div>
+

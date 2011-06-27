@@ -1,0 +1,5 @@
+
+      <%= f.inputs do %>
+      <%= f.input :body, :value => "Your comment...", :onfocus => "if(this.value=='Your comment...')this.value=''", :onblur => "if(this.value=='')this.value='Your comment...'" %>
+<%= f.buttons %>
+<% end %>
