@@ -5,33 +5,30 @@
 
 Gem::Specification.new do |s|
   s.name = %q{comments}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Your Name}]
   s.date = %q{2011-06-27}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{longer description of your gem}
   s.email = %q{abtrinh@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
   s.files = [
-    ".document",
-    "Gemfile",
-    "LICENSE.txt",
-    "README.rdoc",
-    "Rakefile",
-    "VERSION",
-    "lib/comments.rb",
-    "test/helper.rb",
-    "test/test_comments.rb"
+    "app/controllers/comments_controller.rb",
+    "app/views/comments/_fields.html.erb",
+    "app/views/comments/_form.html.erb",
+    "app/views/comments/_list.html.erb",
+    "config/routes.rb",
+    "lib/comments.rb"
   ]
   s.homepage = %q{http://github.com/usctrojan/comments}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{one-line summary of your gem}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
